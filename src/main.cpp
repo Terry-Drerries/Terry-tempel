@@ -7,5 +7,4 @@ void setup() {
   // voor EEUWIG blinken...
 }
 
-void loop(){
-}
+void loop(){}
