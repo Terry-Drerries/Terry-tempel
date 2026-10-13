@@ -1,12 +1,11 @@
 #include <Arduino.h>
+#include <blink.h>
 
 void setup() {
-  pinMode(2, OUTPUT);
-  Serial.begin(115200);
-  Serial.println("Saus test");
+  Blink blink(2);
+  blink.start();
+  // voor EEUWIG blinken...
 }
 
 void loop(){
-  digitalWrite(2, HIGH);
-  Serial.println("Saus test");
 }
