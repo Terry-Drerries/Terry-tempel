@@ -1,12 +1,12 @@
-#include <Arduino.h>
-
+#define LED_PIN 2
 void setup() {
-  pinMode(2, OUTPUT);
-  Serial.begin(115200);
-  Serial.println("Saus test");
+	pinMode(LED_PIN, OUTPUT);
 }
 
 void loop(){
-  digitalWrite(2, HIGH);
-  Serial.println("Saus test");
+	 digitalWrite(LED_PIN, HIGH);
+  delay(1000); 
+
+  digitalWrite(LED_PIN, LOW);
+  delay(1000);
 }
